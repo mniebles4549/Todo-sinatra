@@ -1,0 +1,20 @@
+<h1>Todo app</h1>
+<% if @todos.size > 0  %>
+<ul class="list-group">
+<% @todos.each do |todo| %>
+   <li class="list-group-item d-flex justify-content-between">
+    <a href="/todos/<%= todo[:id] %>">
+      <%= todo[:title] %>
+    </a>
+  <div class="d-inline">
+      <a href="/todos/<%= todo[:id] %>/edit" class="btn btn-primary">
+        Edit
+     </a>
+      <a href="/todos/<%= todo[:id] %>/delete" class="btn btn-danger">
+       Delete
+     </a>
+    </div>
+  </li>
+<% end %>
+</ul>
+<% end %>

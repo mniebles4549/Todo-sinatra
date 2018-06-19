@@ -1,7 +1,12 @@
+
 require 'sinatra'
 
-require './config'
+# Configuration
+require './config/application'
+require './config/routes'
 
-get '/' do
-    erb :index
-end
+# Models
+require './app/models/todo'
+
+# Controllers
+require './app/controllers/todo'

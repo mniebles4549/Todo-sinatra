@@ -6,6 +6,8 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
+    macaddr (1.7.1)
+      systemu (~> 2.6.2)
     mustermann (1.0.2)
     rack (2.0.5)
     rack-protection (2.0.3)
@@ -21,7 +23,10 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.3)
       tilt (~> 2.0)
+    systemu (2.6.5)
     tilt (2.0.8)
+    uuid (2.3.9)
+      macaddr (~> 1.0)
 
 PLATFORMS
   ruby
@@ -29,6 +34,7 @@ PLATFORMS
 DEPENDENCIES
   rerun (~> 0.13.0)
   sinatra (~> 2.0, >= 2.0.3)
+  uuid (~> 2.3, >= 2.3.9)
 
 BUNDLED WITH
    1.16.2
